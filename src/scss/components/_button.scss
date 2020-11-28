@@ -1,0 +1,59 @@
+@import '../abstracts/variables';
+
+.button {
+  display: inline-block;
+  background-color: $yellow;
+  border-radius: 5px;
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color $duration ease-in-out, border-color $duration ease-in-out;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: darken($yellow, 8%);
+  }
+
+  &:active {
+    background-color: darken($yellow, 12%);
+    transform: translateY(1px);
+  }
+
+  &--black {
+    background-color: $black;
+    color: $white;
+
+    &:hover,
+    &:active {
+      color: $black;
+      background-color: transparent;
+      border-color: $black;
+    }
+  }
+
+  &--add {
+    font-weight: 600;
+    font-size: 16px;
+
+    span {
+      display: inline-block;
+      border-radius: 30px;
+      background-color: $white;
+      color: $black;
+      width: 22px;
+      height: 22px;
+      font-size: 13px;
+      line-height: 22px;
+      position: relative;
+      margin-left: 10px;
+    }
+
+    &:hover {
+      span {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}

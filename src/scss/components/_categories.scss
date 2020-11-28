@@ -1,0 +1,20 @@
+@import '../abstracts/variables';
+
+.categories {
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 13px 30px;
+    margin-right: 10px;
+    font-weight: bold;
+    cursor: pointer;
+
+    &.active,
+    &:active,
+    &:hover {
+      border-bottom: 3px solid $yellow;
+    }
+  }
+}

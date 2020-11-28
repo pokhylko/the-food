@@ -1,3 +1,30 @@
-.App {
-  text-align: center;
+@import './scss/abstracts/variables';
+@import './scss/vendor/normalize';
+@import './scss/components/all';
+
+.content {
+  padding: 40px 0;
+
+  &__filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+  }
+
+  &__title {
+    margin: 35px 0;
+  }
+
+  &__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.container {
+  width: $container-width;
+  margin: 0 auto;
 }
