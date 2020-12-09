@@ -1,4 +1,4 @@
-@import '../abstracts/variables';
+@import '../scss/abstracts/variables';
 
 .categories {
   &__list {
@@ -6,9 +6,14 @@
   }
 
   &__item {
-    padding: 13px 30px;
     margin-right: 10px;
     font-weight: bold;
+  }
+
+  &__link {
+    padding: 13px 30px;
+    border: none;
+    background-color: transparent;
     cursor: pointer;
 
     &.active,

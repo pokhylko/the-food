@@ -1,20 +1,16 @@
 import React from 'react';
 
+import { Categories } from './components/Categories';
+
 import './App.scss';
 
 export const App = () => (
   <div className="content">
     <div className="container">
       <div className="content__filter">
-        <div className="categories">
-          <ul className="categories__list">
-            <li className="categories__item active">All</li>
-            <li className="categories__item">Our Favourites</li>
-            <li className="categories__item">Beef</li>
-            <li className="categories__item">Chicken</li>
-            <li className="categories__item">Pork</li>
-          </ul>
-        </div>
+        <Categories
+          categories={['Our Favourites', 'Beef', 'Chicken', 'Pork']}
+        />
         <div className="sort">
           <div className="sort__label">
             Sort by:
