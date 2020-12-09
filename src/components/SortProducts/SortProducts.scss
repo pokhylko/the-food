@@ -1,4 +1,4 @@
-@import '../abstracts/variables';
+@import '../../scss/abstracts/variables';
 
 .sort {
   position: relative;
@@ -6,13 +6,12 @@
   &__label {
     display: flex;
     align-items: center;
+  }
 
-    span {
-      margin-left: 5px;
-      color: $yellow;
-      border-bottom: 1px dashed $yellow;
-      cursor: pointer;
-    }
+  &__button {
+    margin-left: 5px;
+    color: $yellow;
+    border-bottom: 1px dashed $yellow;
   }
 
   &__popup {
@@ -31,9 +30,9 @@
     overflow: hidden;
   }
 
-  &__item {
+  &__link {
     padding: 12px 20px;
-    cursor: pointer;
+    width: 100%;
 
     &.active,
     &:hover {

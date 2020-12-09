@@ -1,4 +1,4 @@
-@import '../scss/abstracts/variables';
+@import '../../scss/abstracts/variables';
 
 .categories {
   &__list {
@@ -12,9 +12,6 @@
 
   &__link {
     padding: 13px 30px;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
 
     &.active,
     &:active,

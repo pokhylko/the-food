@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Categories } from './components/Categories';
+import { SortProducts } from './components/SortProducts';
 
 import './App.scss';
 
@@ -11,19 +12,7 @@ export const App = () => (
         <Categories
           categories={['Our Favourites', 'Beef', 'Chicken', 'Pork']}
         />
-        <div className="sort">
-          <div className="sort__label">
-            Sort by:
-            <span>best selling</span>
-          </div>
-          <div className="sort__popup">
-            <ul className="sort__list">
-              <li className="sort__item active">best selling</li>
-              <li className="sort__item">price</li>
-              <li className="sort__item">alphabetically</li>
-            </ul>
-          </div>
-        </div>
+        <SortProducts sortItems={['best selling', 'price', 'alphabetically']} />
       </div>
       <h2 className="content__title">All burgers</h2>
       <div className="content__items">

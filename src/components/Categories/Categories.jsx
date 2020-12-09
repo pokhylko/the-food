@@ -7,8 +7,8 @@ import './Categories.scss';
 export const Categories = ({ categories }) => {
   const [currentCategory, setCurrentCategory] = useState(null);
 
-  const onSelectCategory = (category) => {
-    setCurrentCategory(category);
+  const onSelectCategory = (index) => {
+    setCurrentCategory(index);
   };
 
   return (
@@ -18,7 +18,7 @@ export const Categories = ({ categories }) => {
           <button
             className={classNames(
               'categories__link',
-              { active: !currentCategory },
+              { active: currentCategory === null },
             )}
             type="button"
             onClick={() => onSelectCategory(null)}
@@ -28,15 +28,15 @@ export const Categories = ({ categories }) => {
         </li>
 
         {categories
-          && categories.map((category) => (
+          && categories.map((category, index) => (
             <li className="categories__item" key={category}>
               <button
                 className={classNames(
                   'categories__link',
-                  { active: currentCategory === category },
+                  { active: currentCategory === index },
                 )}
                 type="button"
-                onClick={() => onSelectCategory(category)}
+                onClick={() => onSelectCategory(index)}
               >
                 {category}
               </button>
