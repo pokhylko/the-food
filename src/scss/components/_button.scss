@@ -55,4 +55,20 @@
       }
     }
   }
+
+  &--cart {
+    display: flex;
+    font-size: 20px;
+
+    .price {
+      border-right: 2px solid $black;
+      padding-right: 10px;
+      margin-right: 10px;
+    }
+
+    .icon {
+      height: 20px;
+      margin-right: 10px;
+    }
+  }
 }
