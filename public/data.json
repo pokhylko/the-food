@@ -1,0 +1,94 @@
+{
+  "burgers": [
+    {
+      "id": 0,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/Arkansas-min-1.jpg",
+      "name": "Arkansas",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 1,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/MG_1636_5-2.jpg",
+      "name": "The Fancy",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 1,
+      "rating": 4
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/the-daddy-3-2.jpg",
+      "name": "The Daddy",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 3,
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/The-high-school-3-2.jpg",
+      "name": "The High School",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 2,
+      "rating": 4
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/Williams-min.jpg",
+      "name": "Williams",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 4,
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/The-Uncle-Sam-min.jpg",
+      "name": "The Uncle Sam",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 2,
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/Macho-Nacho-min.jpg",
+      "name": "The Macho Nacho",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 4,
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/New-York-min.jpg",
+      "name": "New York",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 3,
+      "rating": 4
+    },
+    {
+      "id": 8,
+      "imageUrl": "https://theburger.ua/wp-content/uploads/Indiana-min.jpg",
+      "name": "Indiana",
+      "types": [0, 1],
+      "sizes": ["M", "L", "XL"],
+      "price": 25,
+      "category": 1,
+      "rating": 4
+    }
+  ]
+}
