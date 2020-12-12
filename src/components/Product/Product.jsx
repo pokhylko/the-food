@@ -10,8 +10,8 @@ export const Product = ({ product }) => {
   } = product;
   const TYPES = ['classic', 'vegan'];
   const SIZES = ['M', 'L', 'XL'];
-  const [activeType, setActiveType] = useState(0);
-  const [activeSize, setActiveSize] = useState(0);
+  const [activeType, setActiveType] = useState(types[0]);
+  const [activeSize, setActiveSize] = useState(sizes[0]);
 
   const onSelectType = (index) => {
     setActiveType(index);
