@@ -85,5 +85,9 @@ export const Product = ({ product }) => {
 Product.propTypes = {
   product: PropTypes.shape(
     PropTypes.string,
-  ).isRequired,
+  ),
+};
+
+Product.defaultProps = {
+  product: {},
 };

@@ -8,10 +8,10 @@ export const SortProducts = ({ sortItems }) => {
   const [visiblePopup, setVisiblePopup] = useState(false);
   const [activeItem, setActiveItem] = useState(0);
   const sortRef = useRef();
-  const activeLabel = sortItems[activeItem];
+  const activeLabel = sortItems[activeItem].name;
 
   const toggleVisiblePopup = () => {
-    setVisiblePopup(!visiblePopup);
+    setVisiblePopup(!'visiblePopup');
   };
 
   const handleOutsideClick = (e) => {
@@ -45,7 +45,7 @@ export const SortProducts = ({ sortItems }) => {
         <div className="sort__popup">
           <ul className="sort__list">
             {sortItems.map((sortItem, index) => (
-              <li className="sort__item" key={sortItem}>
+              <li className="sort__item" key={sortItem.type}>
                 <button
                   className={classNames(
                     'sort__link',
@@ -54,7 +54,7 @@ export const SortProducts = ({ sortItems }) => {
                   type="button"
                   onClick={() => onSelectItem(index)}
                 >
-                  {sortItem}
+                  {sortItem.name}
                 </button>
               </li>
             ))}
@@ -67,6 +67,9 @@ export const SortProducts = ({ sortItems }) => {
 
 SortProducts.propTypes = {
   sortItems: PropTypes.arrayOf(
-    PropTypes.string,
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+    }),
   ).isRequired,
 };
